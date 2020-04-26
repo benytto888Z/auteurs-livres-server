@@ -21,7 +21,7 @@ mongoose.connection.once('open',()=>{
     console.log('connected to database');
 })
 
-app.use('api/graphql',graphqlHTTP({
+app.use('/api/graphql',graphqlHTTP({
     schema,
     graphiql:true //we want to use graphiql tool when go to this address
 }));
