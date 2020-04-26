@@ -26,7 +26,7 @@ app.use('/graphql',graphqlHTTP({
     graphiql:true //we want to use graphiql tool when go to this address
 }));
 
-const PORT=process.env.port || 4000;
+const PORT=process.env.PORT || 4000;
 
 app.listen(PORT,()=>{
     console.log('now listen for request on port'+PORT)
